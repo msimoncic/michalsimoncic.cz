@@ -1,0 +1,35 @@
+.about {
+    &__reference {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+        overflow-x: hidden;
+
+        @include min-md {
+            gap: 50px;
+        }
+    }
+
+    &__box {
+        &-image {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 15px;
+        
+            img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        h6 {
+            margin-top: 0 !important;
+        }
+    }
+}

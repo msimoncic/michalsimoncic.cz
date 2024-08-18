@@ -1,0 +1,21 @@
+body {
+    background-color: $c-black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $ff-primary;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @media (min-width: 768px) {
+        gap: 50px;
+    }
+}

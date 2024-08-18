@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+// font family
+$ff-primary: "Karla", sans-serif;
+
+// colors
+$c-black: #000;
+$c-white: #fff;
+$c-primary: #66fcf1;
+$c-gray-400: #c5c6c7;
+$c-gray-600: #1f2833;
+$c-gray-800: #0b0c10;
+
+
+// font size
+$fs-h1: 42px;
+$fs-h2: 36px;
+$fs-h3: 30px;
+$fs-h4: 24px;
+$fs-h5: 18px;
+$fs-h6: 16px;
+$fs-p: 16px;
+$fs-small: 14px;
+$fs-xsmall: 12px;
+
+
+// transition
+$trans: all 0.3s ease;
+
+// border radius
+$br: 5px;
+
+// font weight
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// breakpoints
+$breakpoint-xs: 425px; // mobile devices
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px; // desktop
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1440px;
+
+// grid
+$container-xs: $breakpoint-xs;
+$container-sm: $breakpoint-sm;
+$container-md: $breakpoint-md;
+$container-lg: $breakpoint-lg;
+$container-xl: $breakpoint-xl;
+$container-xxl: $breakpoint-xxl;

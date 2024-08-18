@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michal Šimončič</title>
+    <link rel="stylesheet" href="/web/portfolio/scss/index.css">
+    <script src="/web/portfolio/js/script.js" type="module" defer></script>
+    <script src="/web/portfolio/js/flickity.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#hero"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path></svg></a>
+            <a href="#about"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg></a>
+            <a href="#services"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"></path></svg></a>
+            <a href="#projects"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" width="1em" height="1em"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></a>
+            <a href="#contact"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.767L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.233V16H4V4h16v12z"></path><path d="M7 7h10v2H7zm0 4h7v2H7z"></path></svg></a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero__image">
+                <img src="/web/portfolio/src/img/hero.jpg" alt="Michal Šimončič">
+            </div>
+            <div class="hero__content"> 
+                <h1>Michal Šimončič</h1>
+                <div id="myStatus"></div>
+                <p>Pomůžu vám dovést <br>váš e-shop k dokonalosti.</p>
+                <a href="/web/portfolio/src/zivotopis.pdf" class="btn btn-secondary" target="_blank">Stáhnout CV</a>
+                <a href="#contact" class="btn btn-primary" >Kontaktujte mě</a>
+            </div>
+        </section>
+        <section id="about">
+            <h6>Něco málo</h6>
+            <h2>O mně</h2>
+            <p>
+                Zabývám se tvorbou e-shopů na platformě Shoptet a tvorbou webových stránek. 
+                Můžu vám pomoci s čímkoliv od drobných úprav, přes funkční řešení, 
+                které Shoptet běžně neumožňuje, až po kompletní redesign webu. 
+                Mám bohaté zkušenosti, kdy jsem v rámci firmy <a href="http://mimedigital.cz/">mime digital</a> pracoval na desítkách až stovkách projektů. 
+                Mezi nimi například e-shopy jako <a href="https://www.erikafashion.cz/">Erikafashion</a>, <a href="https://shop.remoska.eu/">Remoska</a>, <a href="https://www.dermalogica.cz/">Dermalogica</a>, <a href="https://www.salononline.cz/">Salononline</a>, <a href="https://eshop.koutny.cz/">Koutný Prostějov</a>, <a href="https://www.vifsports.cz/">Vifsport</a>, <a href="https://www.profirol.sk/">Profirol</a> a mnoho dalších.
+            </p>
+            <div class="about__reference">
+                <div class="about__box">
+                    <h6>Salon Online</h6>
+                    
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/salononline.jpg" alt="Salon Online">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <h6>Dermalogica</h6>
+                    
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/dermalogica.jpg" alt="Dermalogica">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <h6>Profirol</h6>
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/profirol.jpg" alt="Profirol">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <h6>Koutný Prostějov</h6>
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/koutny.jpg" alt="Koutný Prostějov">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <h6>Kupplenky</h6>
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/kupplenky.jpg" alt="Kupplenky">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <h6>Tozame.cz</h6>
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/tozame.jpg" alt="Tozame">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <h6>Erikafashion</h6>
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/erikafashion.jpg" alt="Erikafashion">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <h6>Vifsport</h6>
+                    <div class="about__box-image">
+                        <img src="/web/portfolio/src/img/vifsport.jpg" alt="Vifsport">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h6>Co nabízím za</h6>
+            <h2>Služby</h2>
+            <div class="services">
+                <div class="services__box">
+                    <div class="services__image">
+                        <img src="/web/portfolio/src/icons/shoptetLogo.svg" alt="Shoptet">
+                    </div>
+                    <h4>Tvorba či úprava <br>e-shopů na Shoptetu</h4>
+                    <p>Pomůžu vám s technickými úpravami a vývojem specifických funkcí, které Shoptet standardně nenabízí. Můžu zajistit optimalizaci, přizpůsobení vzhledu nebo provést kompletní redesign e-shopu podle vašich potřeb a designových podkladů.</p>
+                </div>
+                <div class="services__box">
+                    <div class="services__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#0b0c10"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 224L64 288 64 64l448 0z"/></svg>
+                    </div>
+                    <h4>Tvorba <br>webových prezentací</h4>
+                    <p>Pomůžu vám s implementací a optimalizací webové prezentace, aby byla rychlá, funkční a přístupná. Postarám se o to, aby váš web běžel hladce, byl kompatibilní se všemi zařízeními a splňoval moderní standardy vývoje.</p>
+                </div>
+                <div class="services__box">
+                    <div class="services__image">
+                        <img src="/web/portfolio/src/icons/upgates.svg" alt="Upgates">
+                    </div>
+                    <h4>Úprava <br>e-shopů na Upgates</h4>
+                    <p>Pomůžu vám s technickými úpravami na platformě Upgates – od menších změn v kódu a přizpůsobení vzhledu, až po pokročilou optimalizaci a vylepšení funkcionality vašeho e-shopu.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projekty</h2>
+            <div class="projects">
+                <div class="project">
+                    <h4>Pneuservis Babice</h4>
+                    <p>Frontend úpravy a design e-shopu pro pneuservis.</p>
+                </div>
+                <div class="project">
+                    <h4>Tozame.cz</h4>
+                    <p>Vytvoření e-shopu na platformě Shoptet pro firmu Tozame.</p>
+                </div>
+                <div class="project">
+                    <h4>Labona.cz</h4>
+                    <p>Vývoj a správa XML feedů pro e-shop Labona.cz.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h6>Pokud vás něco zajímá</h6>
+            <h2>Kontaktujte mě</h2>
+            <div class="contact__box">
+                <div class="contact__text">
+                    <h4>Máte otázky nebo hledáte ideální řešení pro svůj projekt?</h4>
+                    <h4>Nezávazně mě kontaktujte a společně najdeme to nejlepší řešení pro vás.</h4>
+                </div>
+                <div class="contact__info">
+                    <p>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="contact__option-icon" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg> 
+                        <span>E-mail</span>
+                        <span class="small">michal.simoncic15@gmail.com</span>
+                        <a href="mailto:michal.simoncic15@gmail.com">Poslat mail</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="20px" width="20px" stroke="currentColor" fill="currentColor"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
+                        <span>Telefon</span>
+                        <span class="small">+420 702 052 097</span>
+                        <a href="tel:+420702052097">Zavolat</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.github.com" target="_blank">GitHub</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2024 Michal Šimončič. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+
+</html>
