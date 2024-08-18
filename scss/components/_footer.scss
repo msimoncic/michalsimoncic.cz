@@ -1,0 +1,12 @@
+footer {
+    background-color: $c-gray-600;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: 50px;
+
+    > * {
+        max-width: 1440px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,48 @@
+.contact {
+    &__box {
+        border-radius: $br;
+        width: 100%;
+
+        h4 {
+            text-align: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        p {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            background-color: $c-gray-600;
+            border-radius: $br;
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+            border: 1px solid $c-gray-600;
+            transition: $trans;
+
+            &:hover {
+                background-color: transparent;
+                border-color: $c-primary;
+            }
+        }
+
+        span {
+            margin-bottom: 5px;
+        }
+
+        svg {
+            margin-bottom: 10px;
+        }
+
+        a {
+            margin-top: 10px;
+            font-size: $fs-small;
+        }
+    }
+}

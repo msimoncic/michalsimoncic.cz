@@ -1,0 +1,53 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    @include min-xl {
+        flex-wrap: nowrap;
+    }
+
+    &__box {
+        width: 100%;
+        padding: 25px;
+        background-color: $c-gray-600;
+        border-radius: $br;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        transition: $trans;
+        max-width: 400px;
+
+        &:hover {
+            border: 1px solid $c-primary;
+            transform: scale(1.05);
+            background-color: transparent;
+        }
+
+        @include min-md {
+            width: calc((100% / 2) - 60px);
+        }
+
+        @include min-lg {
+            width: calc((100% / 3));
+        }
+    }
+
+    &__image {
+        width: 70px;
+        height: 70px;
+        background-color: $c-white;
+        border-radius: $br;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img, svg {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}

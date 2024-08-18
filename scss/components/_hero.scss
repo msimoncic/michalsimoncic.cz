@@ -1,0 +1,85 @@
+#hero {
+    height: 100vh;
+    display: flex;
+    position: relative;
+
+    &::after {
+        content: '';
+        background: linear-gradient(0, rgba(0, 0, 0, 0) 0%, $c-black 90%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+        @include min-lg {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, $c-black 90%);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.hero {
+    &__image {
+        width: 100%;
+
+        @include min-lg {
+            width: 90%;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+
+        @include min-lg {
+            width: 40%;
+            top: 50%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+
+        h1 {
+            font-size: clamp(24px, 2vw, 42px);
+            font-family: $ff-primary;
+            color: $c-white;
+            line-height: normal;
+            font-weight: $fw-bold;
+        }
+
+        #myStatus {
+            height: 20px;
+            color: $c-white;
+            font-size: clamp(14px, 2vw, 18px);
+        }
+
+        p {
+            font-size: clamp($fs-p, 2vw, $fs-h4);
+            font-family: $ff-primary;
+            color: $c-white;
+            margin-top: 10px;
+            font-weight: $fw-light;
+            text-align: center;
+
+            @include min-lg {
+                text-align: left;
+            }
+        }
+    }
+}

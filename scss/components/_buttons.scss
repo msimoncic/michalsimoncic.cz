@@ -1,0 +1,28 @@
+.btn {
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: $fs-p;
+    font-family: $ff-primary;
+    border-radius: $br;
+    cursor: pointer;
+    transition: $trans;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $c-white;
+        color: $c-black;
+        border-color: $c-white;
+    }
+
+    &-primary {
+        background-color: $c-primary;
+        color: $c-black;
+        border: 1px solid $c-primary;
+    }
+
+    &-secondary {
+        background-color: transparent;
+        color: $c-primary;
+        border: 1px solid $c-primary;
+    }
+}
