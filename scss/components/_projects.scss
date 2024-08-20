@@ -1,0 +1,75 @@
+.projects {
+    &__slider {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+        overflow-x: hidden;
+        width: 100%;
+
+        @include min-md {
+            gap: 50px;
+        }
+
+        p {
+            max-width: 90%;
+            margin: 0 auto;
+            min-height: 40px;
+            padding: 15px 0;
+        }
+    }
+
+    &__box {
+        width: 100%;
+
+        @include min-sm {
+            width: calc((100% / 2));
+        }
+
+        @include min-xl {
+            width: calc((100% / 3));
+        }
+
+        &-image {
+            height: 225px;
+            overflow: hidden;
+            position: relative;
+            transition: $trans;
+
+            @include min-sm {
+                margin-right: 15px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: rgba(0, 0, 0, 0.3);
+                transition: $trans;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+
+                &::before {
+                    background: rgba(0, 0, 0, 0.0);
+                }
+            }
+        
+            img {
+                width: 100%;
+                height: 215px;
+                position: absolute;
+                border-radius: $br;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        h6 {
+            margin-top: 0 !important;
+        }
+    }
+}

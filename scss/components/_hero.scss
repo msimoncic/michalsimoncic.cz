@@ -42,7 +42,7 @@
         position: absolute;
         width: 100%;
         z-index: 2;
-        top: 10%;
+        top: 15%;
         left: 50%;
         transform: translate(-50%, 0%);
         text-align: center;
@@ -79,6 +79,60 @@
 
             @include min-lg {
                 text-align: left;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+
+        @include min-lg {
+            justify-content: flex-start;
+        }
+    }
+
+    &__socials {
+        position: absolute;
+        right: 50px;
+        z-index: 10;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 50px;
+            background: $c-primary;
+            top: -60px;
+            left: 50%;
+        }
+    }
+
+    &__scroll {
+        position: absolute;
+        z-index: 10;
+        color: $c-primary;
+        display: block;
+        left: 50px;
+        top: 20px;
+
+        @include min-lg {
+            top: unset;
+            left: unset;
+            bottom: 20px;
+            right: 50px;
+            transition: $trans;
+        }
+        
+        &:hover {
+            @include min-md {
+                transform: scale(1.1);
             }
         }
     }

@@ -13,9 +13,9 @@ html {
 main {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
 
     @media (min-width: 768px) {
-        gap: 50px;
+        gap: 100px;
     }
 }

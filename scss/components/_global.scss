@@ -29,6 +29,7 @@ p {
     text-align: center;
     margin-top: 20px;
     font-weight: $fw-light;
+    line-height: 1.2;
 }
 
 a {
@@ -42,4 +43,8 @@ a {
     font-size: $fs-small;
     color: $c-gray-400;
     font-weight: $fw-light;
+}
+
+section {
+    width: 100%;
 }
