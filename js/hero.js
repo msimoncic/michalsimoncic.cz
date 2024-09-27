@@ -1,5 +1,10 @@
 export function cyclicTextDisplay(elementId) {
-  const texts = ["Frontend vývojář", "Fotbalista", "Student"];
+  const texts = [
+    "Frontend vývojář",
+    "Shoptet partner",
+    "Fotbalista",
+    "Student",
+  ];
   let textIndex = 0;
   let charIndex = 0;
   let currentText = "";
