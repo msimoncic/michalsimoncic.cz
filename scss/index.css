@@ -648,7 +648,7 @@ nav a.active {
 }
 .services__box:hover {
   border: 1px solid #66fcf1;
-  transform: scale(1.05);
+  transform: scale(1.02);
   background-color: transparent;
 }
 @media (min-width: 768px) {

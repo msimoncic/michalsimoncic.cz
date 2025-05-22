@@ -11,7 +11,7 @@ export function initializeNavigation() {
 
   // Funkce pro zjištění aktuální sekce podle scrollování
   function updateActiveLinkOnScroll() {
-    if (manualOverride) return; // Pokud byl kliknut odkaz, scrollování nemění active stav
+    if (manualOverride) return;
 
     let current = "";
 
@@ -44,9 +44,7 @@ export function initializeNavigation() {
     });
   });
 
-  // Při scrollování
   window.addEventListener("scroll", updateActiveLinkOnScroll);
 
-  // Nastavení správného odkazu při načtení stránky
   updateActiveLinkOnScroll();
 }

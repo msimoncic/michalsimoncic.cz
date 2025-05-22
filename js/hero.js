@@ -13,7 +13,7 @@ export function cyclicTextDisplay(elementId) {
   function type() {
     const element = document.getElementById(elementId);
 
-    if (!element) return; // Pokud prvek neexistuje, ukonči funkci
+    if (!element) return;
 
     if (isDeleting) {
       currentText = texts[textIndex].substring(0, charIndex - 1);
