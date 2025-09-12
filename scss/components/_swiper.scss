@@ -1,0 +1,20 @@
+body {
+    .swiper-button {
+        &-prev,
+        &-next {
+            color: $c-black;
+            font-size: $fs-h4;
+            background: hsla(0, 0%, 100%, 0.75);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &::after {
+                font-size: $fs-h5;
+            }
+        }
+    }
+}

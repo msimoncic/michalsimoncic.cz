@@ -1,57 +1,61 @@
-.about {
-    &__reference {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 30px;
-        overflow-x: hidden;
+body {
+	.about {
+		&__reference {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			margin-top: 30px;
+			overflow-x: hidden;
 
-        @include min-md {
-            gap: 50px;
-        }
-    }
+			@include min-md {
+				gap: 50px;
+			}
 
-    &__box {
-        width: 100%;
-
-        @include min-sm {
-            width: calc((100% / 2));
-        }
-
-        @include min-lg {
-            width: calc((100% / 3));
-        }
-
-        @include min-xl {
-            width: calc((100% / 4));
-        }
-
-        &-image {
-            height: 300px;
-            overflow: hidden;
-            position: relative;
-            border-radius: $br;
-
-            @include min-sm {
-                margin-right: 15px;
+            .swiper-wrapper {
+                gap: 15px;
             }
-        
-            img {
-                width: 100%;
-                height: auto;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        }
+		}
 
-        h6 {
-            margin-top: 0 !important;
-        }
-    }
+		&__box {
+			width: 100%;
+            cursor: grab;
+            margin-right: 0 !important;
 
-    p {
-        max-width: 840px;
-        margin: 0 auto;
-    }
+			@include min-sm {
+				width: calc((100% / 2) - 7.5px);
+			}
+
+			@include min-lg {
+				width: calc((100% / 3) - 10px);
+			}
+
+			@include min-xl {
+				width: calc((100% / 4) - 12px);
+			}
+
+			&-image {
+				height: 300px;
+				overflow: hidden;
+				position: relative;
+				border-radius: $br;
+
+				img {
+					width: 100%;
+					height: auto;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+
+			h6 {
+				margin-top: 0 !important;
+			}
+		}
+
+		p {
+			max-width: 840px;
+			margin: 0 auto;
+		}
+	}
 }

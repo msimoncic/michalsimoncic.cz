@@ -28,7 +28,7 @@ section:not(#hero) > div {
   margin: 0 auto;
 }
 
-.about__reference {
+body .about__reference {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -36,50 +36,50 @@ section:not(#hero) > div {
   overflow-x: hidden;
 }
 @media (min-width: 768px) {
-  .about__reference {
+  body .about__reference {
     gap: 50px;
   }
 }
-.about__box {
+body .about__reference .swiper-wrapper {
+  gap: 15px;
+}
+body .about__box {
   width: 100%;
+  cursor: grab;
+  margin-right: 0 !important;
 }
 @media (min-width: 576px) {
-  .about__box {
-    width: 50%;
+  body .about__box {
+    width: calc(50% - 7.5px);
   }
 }
 @media (min-width: 992px) {
-  .about__box {
-    width: 33.3333333333%;
+  body .about__box {
+    width: calc(33.3333333333% - 10px);
   }
 }
 @media (min-width: 1200px) {
-  .about__box {
-    width: 25%;
+  body .about__box {
+    width: calc(25% - 12px);
   }
 }
-.about__box-image {
+body .about__box-image {
   height: 300px;
   overflow: hidden;
   position: relative;
   border-radius: 5px;
 }
-@media (min-width: 576px) {
-  .about__box-image {
-    margin-right: 15px;
-  }
-}
-.about__box-image img {
+body .about__box-image img {
   width: 100%;
   height: auto;
   position: absolute;
   top: 0;
   left: 0;
 }
-.about__box h6 {
+body .about__box h6 {
   margin-top: 0 !important;
 }
-.about p {
+body .about p {
   max-width: 840px;
   margin: 0 auto;
 }
@@ -165,150 +165,6 @@ section:not(#hero).visible {
 .contact__info a {
   margin-top: 10px;
   font-size: 14px;
-}
-
-/*! Flickity v2.3.0
-https://flickity.metafizzy.co
----------------------------------------------- */
-.flickity-enabled {
-  position: relative;
-}
-
-.flickity-enabled:focus {
-  outline: none;
-}
-
-.flickity-viewport {
-  height: 100%;
-}
-
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .flickity-slider {
-    margin-left: 8px;
-  }
-}
-
-/* draggable */
-.flickity-enabled.is-draggable {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport {
-  cursor: move;
-  cursor: grab;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
-  cursor: grabbing;
-}
-
-/* ---- flickity-button ---- */
-.flickity-button {
-  position: absolute;
-  background: hsla(0, 0%, 100%, 0.75);
-  border: none;
-  color: #333;
-}
-
-.flickity-button:hover {
-  background: white;
-  cursor: pointer;
-}
-
-.flickity-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 5px #19F;
-}
-
-.flickity-button:active {
-  opacity: 0.6;
-}
-
-.flickity-button:disabled {
-  opacity: 0.3;
-  cursor: auto;
-  /* prevent disabled button from capturing pointer up event. #716 */
-  pointer-events: none;
-}
-
-.flickity-button-icon {
-  fill: currentColor;
-}
-
-/* ---- previous/next buttons ---- */
-.flickity-prev-next-button {
-  top: 50%;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  /* vertically center */
-  transform: translateY(-50%);
-}
-
-.flickity-prev-next-button.previous {
-  left: 10px;
-}
-
-.flickity-prev-next-button.next {
-  right: 10px;
-}
-
-/* right to left */
-.flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px;
-}
-
-.flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
-}
-
-.flickity-prev-next-button .flickity-button-icon {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  width: 60%;
-  height: 60%;
-}
-
-/* ---- page dots ---- */
-.flickity-page-dots {
-  position: absolute;
-  width: 100%;
-  bottom: -25px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  line-height: 1;
-}
-
-.flickity-rtl .flickity-page-dots {
-  direction: rtl;
-}
-
-.flickity-page-dots .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 8px;
-  background: #333;
-  border-radius: 50%;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-.flickity-page-dots .dot.is-selected {
-  opacity: 1;
 }
 
 footer {
@@ -552,7 +408,7 @@ nav a.active {
   color: #0b0c10;
 }
 
-.projects__slider {
+body .projects__slider {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -561,41 +417,41 @@ nav a.active {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .projects__slider {
+  body .projects__slider {
     gap: 50px;
   }
 }
-.projects__slider p {
+body .projects__slider p {
   max-width: 90%;
   margin: 0 auto;
   min-height: 40px;
   padding: 15px 0;
 }
-.projects__box {
+body .projects__box {
   width: 100%;
 }
 @media (min-width: 576px) {
-  .projects__box {
+  body .projects__box {
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .projects__box {
+  body .projects__box {
     width: 33.3333333333%;
   }
 }
-.projects__box-image {
+body .projects__box-image {
   height: 225px;
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
 }
 @media (min-width: 576px) {
-  .projects__box-image {
+  body .projects__box-image {
     margin-right: 15px;
   }
 }
-.projects__box-image::before {
+body .projects__box-image::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -604,13 +460,13 @@ nav a.active {
   background: rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-.projects__box-image:hover {
+body .projects__box-image:hover {
   transform: scale(1.05);
 }
-.projects__box-image:hover::before {
+body .projects__box-image:hover::before {
   background: rgba(0, 0, 0, 0);
 }
-.projects__box-image img {
+body .projects__box-image img {
   width: 100%;
   height: 215px;
   position: absolute;
@@ -618,7 +474,7 @@ nav a.active {
   top: 0;
   left: 0;
 }
-.projects__box h6 {
+body .projects__box h6 {
   margin-top: 0 !important;
 }
 
@@ -673,4 +529,19 @@ nav a.active {
 .services__image img, .services__image svg {
   height: 40px;
   width: 40px;
+}
+
+body .swiper-button-prev, body .swiper-button-next {
+  color: #000;
+  font-size: 24px;
+  background: hsla(0, 0%, 100%, 0.75);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .swiper-button-prev::after, body .swiper-button-next::after {
+  font-size: 18px;
 }/*# sourceMappingURL=index.css.map */
